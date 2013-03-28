@@ -1,4 +1,3 @@
 class Lawyer < ActiveRecord::Base
-	has_many :dockets
-	has_many :cases, :through => :dockets
+	has_and_belongs_to_many :cases
 end
