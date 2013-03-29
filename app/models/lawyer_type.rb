@@ -1,3 +1,3 @@
 class LawyerType < ActiveRecord::Base
-  belongs_to :lawyer
+  has_many :lawyers
 end

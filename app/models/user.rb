@@ -1,11 +1,12 @@
+require 'bcrypt'
+
 class User < ActiveRecord::Base
   # (Remember to create a migration?)
 	# I don't think this class needs a migration, since it's not associated
 	# with any of the other data tables. It's used just to limit access
 	# to the site.
 	
-  include 'BCrypt'
-
+  include BCrypt
 
   def password
     @password ||= Password.new(password_hash)
