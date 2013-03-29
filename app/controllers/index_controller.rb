@@ -36,3 +36,21 @@ end
 get '/search' do
 	erb :search
 end
+
+# SEARCH ROUTES
+
+get '/search/lawyer' do
+	erb :search_lawyer
+end
+
+get '/search/judge' do
+	erb :search_judge
+end
+
+get '/search/case_number' do
+	erb :search_case_number
+end
+
+get '/search/defendant' do
+	erb :search_defendant
+end

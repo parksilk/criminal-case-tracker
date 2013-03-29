@@ -15,6 +15,8 @@
 <div class="container">
   <% if logged_in? %>
     <a href="/user/logout" class='btn'>Logout</a>
+    <a href="/search" class='btn'>Search</a>
+    <h3 class='page_title'>Criminal Case Database</h3>
   <% else %>
   <% end %>
   <%= yield %>
