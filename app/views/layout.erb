@@ -12,7 +12,13 @@
   <title></title>
 </head>
 <body>
+<div class="container">
+  <% if logged_in? %>
+    <a href="/user/logout" class='btn'>Logout</a>
+  <% else %>
+  <% end %>
   <%= yield %>
+</div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="javascript/application.js"></script>
 </body>
